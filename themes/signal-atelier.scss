@@ -1,0 +1,8 @@
+/* @theme signal-atelier */
+
+@charset "UTF-8";
+@import "default";
+
+/* SCSS entrypoint. It intentionally stays valid CSS so Marp can use the file directly
+   when a Sass compiler is not available. The compiled CSS twin is kept beside it. */
+@import "./signal-atelier.css";

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="720" viewBox="0 0 760 720" role="img" aria-label="Abstract signal field map">
+  <rect width="760" height="720" fill="#efe8dc"/>
+  <g opacity=".26" stroke="#202322" stroke-width="1">
+    <path d="M0 80h760M0 160h760M0 240h760M0 320h760M0 400h760M0 480h760M0 560h760M0 640h760"/>
+    <path d="M80 0v720M160 0v720M240 0v720M320 0v720M400 0v720M480 0v720M560 0v720M640 0v720M720 0v720"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M55 515C139 418 204 606 287 506c82-98 143-260 261-194 82 46 74 171 164 168" stroke="#0e7c74" stroke-width="18" opacity=".76"/>
+    <path d="M49 208c96 59 139-78 225-37 88 41 78 186 169 195 93 9 152-98 250-68" stroke="#d85b4a" stroke-width="12" opacity=".72"/>
+    <path d="M117 612c92-54 132-42 196-4 110 66 195-32 258-116 37-50 73-74 125-69" stroke="#34699a" stroke-width="8" opacity=".65"/>
+    <path d="M124 94c56 55 111 68 167 44 126-54 173-20 246 73 41 52 88 71 149 58" stroke="#e7b84e" stroke-width="14" opacity=".72"/>
+  </g>
+  <g fill="#202322">
+    <circle cx="55" cy="515" r="10"/>
+    <circle cx="287" cy="506" r="10"/>
+    <circle cx="548" cy="312" r="10"/>
+    <circle cx="693" cy="298" r="10"/>
+    <circle cx="117" cy="612" r="8"/>
+    <circle cx="696" cy="423" r="8"/>
+  </g>
+  <g font-family="Cascadia Code, Consolas, monospace" font-size="18" fill="#202322" opacity=".72">
+    <text x="54" y="48">FIELD 04</text>
+    <text x="562" y="676">SIGNAL ATELIER</text>
+    <text x="412" y="118">A/B PATHS</text>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "name": "signal-marp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A refined Marp template with editorial grids, data cards, and presentation examples.",
+  "scripts": {
+    "html": "marp examples/signal-atelier-example.md --theme themes/signal-atelier.css --html --output dist/signal-atelier-example.html",
+    "pdf": "marp examples/signal-atelier-example.md --theme themes/signal-atelier.css --html --pdf --allow-local-files --output dist/signal-atelier-example.pdf",
+    "pdf:edge": "marp examples/signal-atelier-example.md --theme themes/signal-atelier.css --html --pdf --allow-local-files --browser edge --browser-path \"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --output dist/signal-atelier-example.pdf"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.0"
+  }
+}

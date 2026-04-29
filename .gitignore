@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Package manager caches and logs
+.npm/
+.pnpm-store/
+yarn-error.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Generated outputs
+dist/
+
+# Local visual check screenshots
+**/*-check.png
+**/*-check.jpg
+**/*-check.jpeg
+**/*-check.webp
+
+# Local editor and OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.*
+!.env.example
