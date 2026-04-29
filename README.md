@@ -6,11 +6,11 @@
 
 ### VS Code
 安装 [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)扩展，
-在`Signal-Marp/`下启动VS Code，打开`examples/signal-atelier-example.md`查看预览和导出。
+在 `Signal-Marp/` 下启动VS Code，打开 `examples/signal-atelier-example.md` 查看预览和导出。
 
 ### marp(npm)
 
-安装`marp`：
+安装 `marp` ：
 
 ```bash
 npm install
@@ -80,7 +80,7 @@ npm run pdf:edge
 - `--sa-heading`：`Source Han Serif CN` / `Noto Serif SC`，用于章节标题和页面标题。
 - `--sa-body`：`MiSans` / `Noto Sans SC` / `Microsoft YaHei UI`，用于正文。
 - `--sa-ui`：`Bahnschrift` / `Ubuntu Sans` / `MiSans`，用于数字、短标签和强调信息。
-- `--sa-literary`：`UD Digi Kyokasho N-R` / `FZSTK` / `STKaiti`，用于引用和单句 statement。
+- `--sa-literary`：`UD Digi Kyokasho N-R` / `FZSTK` / `LXGW WenKai`，用于引用和单句 statement。
 - `--sa-mono`：`AtkinsonMono Nerd Font` / `UbuntuSansMono Nerd Font` / `Cascadia Code`，用于代码和页眉页脚。
 
 ## Frontmatter 示例
