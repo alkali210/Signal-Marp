@@ -1,40 +1,26 @@
 # Signal Atelier Marp
 
-`Signal Atelier` 是一套简单优美的 Marp 演示文稿模板。
-
 ## [示例](examples/signal-atelier-example.pdf)
-
-## 设计方向
-
-- 编辑部式网格：稳定边框、细网格背景、清晰标题层级。
-- 数据型表达：指标卡、时间线、对照面板和紧凑表格优先服务真实内容。
-- 多色但克制：graphite、teal、coral、amber、blue、mint 共同构成识别系统。
-- 离线可用：不依赖远程字体、图标 CDN 或外部图片。
-- 字体分层：标题使用本地衬线字体栈，正文使用 `MiSans` / `Noto Sans SC`，代码和标签使用等宽字体，引用使用偏书写感的中文字体栈。
-
-## 文件
-
-- `themes/signal-atelier.css`：Marp 可直接使用的主题。
-- `themes/signal-atelier.scss`：SCSS 入口；保持 CSS 兼容，便于未来扩展。
-- `examples/signal-atelier-example.md`：完整示例，展示封面、目录、分栏、卡片、引用、代码、表格和收尾页。
-- `assets/`：示例用的原创 SVG 视觉资产。
-- `.vscode/settings.json`：VS Code Marp 插件主题配置。
-- `dist/`：导出 HTML/PDF 的建议输出目录。
 
 ## 使用
 
-在 `Signal-Marp/` 中打开示例：
+### VS Code
+安装 [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)扩展，
+在`Signal-Marp/`下启动VS Code，打开`examples/signal-atelier-example.md`查看预览和导出。
 
-```bash
-marp examples/signal-atelier-example.md --theme themes/signal-atelier.css --html --output dist/signal-atelier-example.html
-```
+### marp(npm)
 
-如果本机没有全局 `marp`，可安装依赖后运行：
+安装`marp`：
 
 ```bash
 npm install
 npm run html
 npm run pdf
+```
+在 `Signal-Marp/` 中打开示例：
+
+```bash
+marp examples/signal-atelier-example.md --theme themes/signal-atelier.css --html --output dist/signal-atelier-example.html
 ```
 
 在某些 Windows 环境中，如果 PDF 导出报 `spawn UNKNOWN`，说明 Marp 没能自动启动浏览器。可以指定 Edge：
@@ -43,7 +29,13 @@ npm run pdf
 npm run pdf:edge
 ```
 
-VS Code 用户可以直接打开 `Signal-Marp/`，安装 Marp for VS Code 后预览 `examples/signal-atelier-example.md`。
+## 设计方向
+
+- 编辑部式网格：稳定边框、细网格背景、清晰标题层级。
+- 数据型表达：指标卡、时间线、对照面板和紧凑表格优先服务真实内容。
+- 多色但克制：graphite、teal、coral、amber、blue、mint 共同构成识别系统。
+- 离线可用：不依赖远程字体、图标 CDN 或外部图片。
+- 字体分层：标题使用本地衬线字体栈，正文使用 `MiSans` / `Noto Sans SC`，代码和标签使用等宽字体，引用使用偏书写感的中文字体栈。
 
 ## 常用页面类
 
@@ -82,7 +74,7 @@ VS Code 用户可以直接打开 `Signal-Marp/`，安装 Marp for VS Code 后预
 
 ## 字体策略
 
-主题不加载远程字体，优先使用当前 Windows 环境中已有字体：
+主题不加载远程字体，优先使用当前环境中已有字体：
 
 - `--sa-display`：`Apple Garamond` / `Latin Modern Roman` / `Source Han Serif CN`，用于封面大标题。
 - `--sa-heading`：`Source Han Serif CN` / `Noto Serif SC`，用于章节标题和页面标题。
@@ -103,3 +95,6 @@ header: "Signal Atelier"
 footer: "Marp template"
 ---
 ```
+
+## Todo
+- [ ] 解决在`pdf.js`上的渲染一致性问题
