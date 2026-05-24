@@ -23,12 +23,6 @@ npm run pdf
 marp examples/signal-atelier-example.md --theme themes/signal-atelier.css --html --output dist/signal-atelier-example.html
 ```
 
-在某些 Windows 环境中，如果 PDF 导出报 `spawn UNKNOWN`，说明 Marp 没能自动启动浏览器。可以指定 Edge：
-
-```bash
-npm run pdf:edge
-```
-
 ## 设计方向
 
 - 编辑部式网格：稳定边框、细网格背景、清晰标题层级。
@@ -39,38 +33,38 @@ npm run pdf:edge
 
 ## 常用页面类
 
-| 类名 | 用途 |
-| --- | --- |
-| `cover` | 封面页 |
-| `cover cover-side` | 侧图封面页 |
-| `cover cover-band` | 色带封面页 |
-| `toc` | 目录页 |
-| `toc toc-rail` | 纵向 rail 目录 |
-| `toc toc-dense` | 高密度目录 |
-| `divider` | 章节过渡页 |
-| `divider divider-center` | 居中章节页 |
-| `divider divider-band` | 横带章节页 |
-| `inverse` | 深色重点页 |
-| `dashboard` | 数据仪表盘页 |
-| `compact` | 信息密度更高的页面 |
-| `end` | 结束页 |
-| `full-bleed` | 全出血页面 |
+| 类名                     | 用途               |
+| ------------------------ | ------------------ |
+| `cover`                  | 封面页             |
+| `cover cover-side`       | 侧图封面页         |
+| `cover cover-band`       | 色带封面页         |
+| `toc`                    | 目录页             |
+| `toc toc-rail`           | 纵向 rail 目录     |
+| `toc toc-dense`          | 高密度目录         |
+| `divider`                | 章节过渡页         |
+| `divider divider-center` | 居中章节页         |
+| `divider divider-band`   | 横带章节页         |
+| `inverse`                | 深色重点页         |
+| `dashboard`              | 数据仪表盘页       |
+| `compact`                | 信息密度更高的页面 |
+| `end`                    | 结束页             |
+| `full-bleed`             | 全出血页面         |
 
 ## 常用组件
 
-| 类名 | 用途 |
-| --- | --- |
-| `columns` / `ratio-60` / `ratio-40` | 两栏布局 |
-| `grid-3` / `tiles` | 三栏内容组 |
-| `metric-grid` / `metric` | 数据指标卡 |
-| `panel` / `panel dark` | 内容面板 |
-| `quote-panel` / `quote-mark` | 大引用版式 |
-| `comparison` | 左右对照页 |
-| `statement` | 单句结论页 |
-| `note-list` | 编号说明块 |
-| `timeline` | 四段式时间线 |
-| `swatches` | 色板展示 |
-| `kicker` / `lead` / `micro` | 文本层级辅助 |
+| 类名                                | 用途         |
+| ----------------------------------- | ------------ |
+| `columns` / `ratio-60` / `ratio-40` | 两栏布局     |
+| `grid-3` / `tiles`                  | 三栏内容组   |
+| `metric-grid` / `metric`            | 数据指标卡   |
+| `panel` / `panel dark`              | 内容面板     |
+| `quote-panel` / `quote-mark`        | 大引用版式   |
+| `comparison`                        | 左右对照页   |
+| `statement`                         | 单句结论页   |
+| `note-list`                         | 编号说明块   |
+| `timeline`                          | 四段式时间线 |
+| `swatches`                          | 色板展示     |
+| `kicker` / `lead` / `micro`         | 文本层级辅助 |
 
 ## 字体策略
 
@@ -96,5 +90,3 @@ footer: "Marp template"
 ---
 ```
 
-## Todo
-- [ ] 解决在`pdf.js`上的渲染一致性问题

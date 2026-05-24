@@ -27,18 +27,15 @@
   --sa-mono: "AtkinsonMono Nerd Font", "UbuntuSansMono Nerd Font", "Cascadia Code", Consolas, monospace;
 }
 
+/* Large decorative gradients are pre-flattened to PNGs in assets/rasterized/.
+   This keeps exported PDFs fast and consistent across PDF renderers. */
 section {
   width: 1280px;
   height: 720px;
   box-sizing: border-box;
   padding: 66px 76px 58px;
   overflow: hidden;
-  background:
-    linear-gradient(90deg, rgba(32, 35, 34, 0.045) 1px, transparent 1px) 0 0 / 80px 80px,
-    linear-gradient(0deg, rgba(32, 35, 34, 0.04) 1px, transparent 1px) 0 0 / 80px 80px,
-    radial-gradient(circle at 88% 12%, rgba(216, 91, 74, 0.16), transparent 29%),
-    radial-gradient(circle at 12% 88%, rgba(14, 124, 116, 0.13), transparent 24%),
-    var(--sa-paper);
+  background: var(--sa-paper) url("../assets/rasterized/bg-default.png") center / 100% 100% no-repeat;
   color: var(--sa-ink);
   font-family: var(--sa-body);
   font-size: 27px;
@@ -116,7 +113,7 @@ h2::before {
   width: 18px;
   height: 18px;
   margin-right: 16px;
-  background: conic-gradient(from 90deg, var(--sa-teal), var(--sa-amber), var(--sa-coral), var(--sa-teal));
+  background: url("../assets/rasterized/chip-conic.png") center / 100% 100% no-repeat;
   vertical-align: 0.03em;
 }
 
@@ -319,9 +316,7 @@ img {
 }
 
 .panel.dark {
-  background:
-    linear-gradient(135deg, rgba(14, 124, 116, 0.18), transparent 34%),
-    var(--sa-graphite);
+  background: var(--sa-graphite) url("../assets/rasterized/bg-panel-dark.png") center / 100% 100% no-repeat;
   color: var(--sa-paper);
 }
 
@@ -374,7 +369,7 @@ img {
   width: 42px;
   height: 6px;
   margin-bottom: 18px;
-  background: linear-gradient(90deg, var(--sa-teal), var(--sa-amber), var(--sa-coral));
+  background: url("../assets/rasterized/tile-bar.png") center / 100% 100% no-repeat;
 }
 
 .quote-panel {
@@ -389,10 +384,7 @@ img {
   place-items: center;
   min-height: 270px;
   border: 1px solid var(--sa-line);
-  background:
-    linear-gradient(135deg, rgba(216, 91, 74, 0.18), transparent 38%),
-    linear-gradient(315deg, rgba(14, 124, 116, 0.20), transparent 44%),
-    rgba(255, 255, 255, 0.38);
+  background: url("../assets/rasterized/bg-quote-mark.png") center / 100% 100% no-repeat;
   color: var(--sa-graphite);
   font-family: var(--sa-display);
   font-size: 180px;
@@ -478,12 +470,7 @@ img {
 
 section.cover {
   padding: 64px 76px;
-  background:
-    linear-gradient(90deg, transparent 0 8%, rgba(32, 35, 34, 0.08) 8% 8.1%, transparent 8.1% 100%),
-    radial-gradient(circle at 82% 19%, rgba(231, 184, 78, 0.26), transparent 23%),
-    radial-gradient(circle at 78% 70%, rgba(216, 91, 74, 0.24), transparent 21%),
-    linear-gradient(135deg, rgba(14, 124, 116, 0.12), transparent 34%),
-    var(--sa-paper);
+  background: var(--sa-paper) url("../assets/rasterized/bg-cover.png") center / 100% 100% no-repeat;
 }
 
 section.cover::before {
@@ -544,9 +531,7 @@ section.cover.cover-side .visual {
   align-self: stretch;
   min-height: 560px;
   border: 1px solid var(--sa-line-strong);
-  background:
-    linear-gradient(135deg, rgba(14, 124, 116, 0.12), transparent 34%),
-    rgba(255, 255, 255, 0.44);
+  background: url("../assets/rasterized/bg-cover-side-visual.png") center / 100% 100% no-repeat;
   box-shadow: var(--sa-shadow);
 }
 
@@ -559,11 +544,7 @@ section.cover.cover-side .visual img {
 section.cover.cover-band {
   display: grid;
   place-items: center start;
-  background:
-    linear-gradient(90deg, var(--sa-graphite) 0 34%, var(--sa-coral) 34% calc(34% + 10px), transparent calc(34% + 10px) 100%),
-    radial-gradient(circle at 78% 22%, rgba(231, 184, 78, 0.34), transparent 24%),
-    radial-gradient(circle at 76% 72%, rgba(216, 91, 74, 0.22), transparent 28%),
-    var(--sa-paper);
+  background: var(--sa-paper) url("../assets/rasterized/bg-cover-band.png") center / 100% 100% no-repeat;
 }
 
 section.cover.cover-band h1 {
@@ -708,10 +689,7 @@ section.divider.divider-center .chapter {
 section.divider.divider-band {
   grid-template-columns: 1fr;
   align-content: center;
-  background:
-    linear-gradient(0deg, transparent 0 38%, var(--sa-graphite) 38% 63%, transparent 63% 100%),
-    radial-gradient(circle at 15% 18%, rgba(14, 124, 116, 0.18), transparent 26%),
-    var(--sa-paper);
+  background: var(--sa-paper) url("../assets/rasterized/bg-divider-band.png") center / 100% 100% no-repeat;
 }
 
 section.divider.divider-band h1,
@@ -749,9 +727,7 @@ section.dashboard .metric-grid {
 section.dashboard .metric:first-child {
   grid-row: span 2;
   min-height: 302px;
-  background:
-    linear-gradient(135deg, rgba(14, 124, 116, 0.18), transparent 34%),
-    rgba(255, 255, 255, 0.58);
+  background: url("../assets/rasterized/bg-dashboard-metric.png") center / 100% 100% no-repeat;
 }
 
 section.dashboard .metric:first-child b {
@@ -784,9 +760,7 @@ section.dashboard .metric:first-child b {
   place-items: center;
   padding: 42px;
   border: 1px solid var(--sa-line-strong);
-  background:
-    linear-gradient(135deg, rgba(231, 184, 78, 0.20), transparent 38%),
-    rgba(255, 255, 255, 0.54);
+  background: url("../assets/rasterized/bg-statement.png") center / 100% 100% no-repeat;
   box-shadow: var(--sa-shadow);
   text-align: center;
 }
@@ -815,12 +789,7 @@ section.dashboard .metric:first-child b {
 
 section.inverse,
 section.end {
-  background:
-    linear-gradient(90deg, rgba(247, 244, 236, 0.06) 1px, transparent 1px) 0 0 / 80px 80px,
-    linear-gradient(0deg, rgba(247, 244, 236, 0.05) 1px, transparent 1px) 0 0 / 80px 80px,
-    radial-gradient(circle at 82% 18%, rgba(216, 91, 74, 0.22), transparent 26%),
-    radial-gradient(circle at 12% 88%, rgba(231, 184, 78, 0.16), transparent 24%),
-    var(--sa-graphite);
+  background: var(--sa-graphite) url("../assets/rasterized/bg-inverse.png") center / 100% 100% no-repeat;
   color: var(--sa-paper);
 }
 
@@ -861,10 +830,7 @@ section.inverse em {
 
 section.inverse .quote-mark {
   border-color: rgba(231, 184, 78, 0.62);
-  background:
-    linear-gradient(135deg, rgba(231, 184, 78, 0.28), transparent 42%),
-    linear-gradient(315deg, rgba(14, 124, 116, 0.20), transparent 44%),
-    rgba(247, 244, 236, 0.08);
+  background: url("../assets/rasterized/bg-quote-mark-inverse.png") center / 100% 100% no-repeat;
   color: var(--sa-amber);
 }
 
